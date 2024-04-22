@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <title>Document</title>
+</head>
+<body id="body">
+   <div class="hide">
+    <div class="hidden1">
+        <h1>ใส่ข้อมูล</h1>
+        <div class="hidden-box">
+           <div class="div1">
+        
+            <input id="bio1" type="text" class="in" placeholder="ช่องทางการติดต่อ">
+          
+            
+                <input id="spe1" type="text" class="in" placeholder="สายพันธ์ุ">
+          
+           </div>
+         
+            <div class="div3">
+                <p>ชนิด</p>
+           <select class="in1" id="age1">
+            <option class="op" >สุนัข</option>
+            <option class="op" >แมว</option>
+           </select>
+            </div>
+            <div class="div4">
+                <p>ที่อยู่</p>
+            <input id="address1" type="text" class="in" placeholder="ที่อยู่">
+            </div>
+            <div class="custom-file-upload">
+                <p>รูปภาพ</p>
+                <label for="pic" class="custom-file-label">Choose File</label>
+                <input id="pic" onload="choosePic()" type="file">
+            </div>
+        </div>
+        <button id="submit" class="submit" onclick="submit()">ตกลง</button>
+      </div>
+   </div>
+   <div class="hide2">
+    <div class="hidden2">
+        <h1>ใส่ข้อมูล</h1>
+        <div class="hidden-box">
+           <div class="div1">
+            <p>ช่องทางการติดต่อ</p>
+            <input id="bio1" type="text" class="in" placeholder="bio">
+           </div>
+            <div class="div4">
+                <p>ที่อยู่</p>
+            <input id="address1" type="text" class="in" placeholder="ที่อยู่">
+            </div>
+        </div>
+        <button id="submit" class="submit" onclick="adoptSubmit()">ตกลง</button>
+      </div>
+   </div>
+    <div id="big">
+        <nav id="nav">
+            <div>
+                <img src="/Pet Store.png" class="logo" alt="">
+            </div>
+                <!-- <div class="dropdown" id="dd1">
+                    <button class="dropbtn">Categories 
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a class="a" href="#con" onclick="show('box')">ทั้งหมด</a>
+                      <a class="a" href="#con" onclick="show('dog')">สุนัข</a>
+                      <a class="a" href="#con" onclick="show('cat')">แมว</a>
+                    </div>
+                  </div>  -->
+            <!-- <div class="search">
+                <input class="search" placeholder="ค้นหาจากที่อยู่" type="search">
+            </div>
+            <div class="mode">
+                <i class="fa-solid fa-lightbulb"></i>
+            </div> -->
+           <div class="login-regis">
+            <div class="login">
+                <button>
+                    Login
+                </button>
+            </div>
+            <div class="regis">
+                <button>
+                    Register
+                </button>
+            </div>
+           </div>
+        </nav>
+        <!-- ----------------------Login---------------- -->
+        
+        <form class="container">
+            <h2>Log in</h2>
+            <input class="textbox" type="text" placeholder="Username">
+            <input class="textbox" type="password" placeholder="Password">
+            <input class="btn-submit" type="submit" placeholder="Login">
+            <div class="remember-forgot">
+                <a href="Forgot.html" class="forgot-link">Forgot Password?</a>
+            </div>
+            <div class="login-register">
+                <p>Don't have an account?
+                    <a href="Register.html" class="register-link">Register</a></p>
+            </div>
+        </form>
+<!-- --------------------end------------------- -->
+    <footer>
+        <div class="backfooter">
+            <ul>
+                <div class="footer-box1">
+                    <img src="/Pet Store.png" alt="">
+                    <p>Sample street 10,<br>
+                        Sample city 0000, Thailand</p>
+                        <br>
+                        <p>
+                            Phone :  099 999 9999
+                        </p>
+                        <br>
+                        <p>
+                            Email :  Adopt me @ gmail.com
+                        </p>
+                </div>
+                <div class="footer-box2">
+                    <p>NAVIGATION</p>
+                    <a href="#">Adopt a dog</a>
+                    <a href="#">Ways to help</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Contact us</a>
+    
+                </div>
+                <div class="footer-box3">
+                    <p>ABOUT DOGS & PUPPIES</p>
+                    <a href="#">Ben</a>
+                    <a href="#">Diesel</a>
+                    <a href="#">Wodan</a>
+                    <a href="#">Bartney</a>
+                    <a href="#">Bailey</a>
+                    <a href="#">Junior</a>
+                </div>
+                <div class="footer-box4">
+                    <p>ABOUT CATS & KITTENS</p>
+                    <a href="#">Lassie</a>
+                    <a href="#">Veiga</a>
+                    <a href="#">Kitty</a>
+                    <a href="#">Gray</a>
+                    <a href="#">Kuro</a>
+                    <a href="#">Tigress</a>
+                </div>
+                <div class="footer-box5">
+                    <p>FOLLOW US</p>
+                    <a href="#"><img src="/Instagram.png" alt="" height="48px" width="48px"></a>
+                    <a href=""><img src="/facebook.png" alt="" height="48px" width="48px"></a>
+                    <a href=""><img src="/in.png" alt="" height="48px" width="48px"></a>
+                    <a href=""><img src="/tiktok.png" alt="" height="48px" width="48px"></a>
+                    <a href=""><img src="/x.png" alt="" height="48px" width="48px"></a>
+    
+                </div>
+            </ul>
+        </div>
+    </footer>
+    <div class="to-top">
+        <a id="top" href="#big"><i class="fa-solid fa-arrow-up"></i></a>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/504d72feaa.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+</body>
+</html>
